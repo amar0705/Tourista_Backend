@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from djangoProject.views import YourModelAPIView, HostAPIView, LoginAPIView, HostPropertyAPIView, LogoutAPIView, \
+from tourista_backend.views import YourModelAPIView, HostAPIView, LoginAPIView, HostPropertyAPIView, LogoutAPIView, \
     PropertyTypeAPIView, StateAPIView, CityAPIView, GuestAPIView, AllPropertiesAPIView
 
 urlpatterns = [

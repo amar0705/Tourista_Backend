@@ -7,7 +7,7 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('djangoProject', '0001_initial'),
+        ('tourista_backend', '0001_initial'),
     ]
 
     operations = [
@@ -75,15 +75,15 @@ class Migration(migrations.Migration):
                 ('hosted_since', models.DateTimeField(null=True)),
                 ('created_at', models.DateTimeField(auto_now_add=True)),
                 ('updated_at', models.DateTimeField(auto_now_add=True)),
-                ('city', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='djangoProject.city')),
-                ('host', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='djangoProject.host')),
-                ('property_type', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='djangoProject.propertytype')),
-                ('state', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='djangoProject.state')),
+                ('city', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='tourista_backend.city')),
+                ('host', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='tourista_backend.host')),
+                ('property_type', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='tourista_backend.propertytype')),
+                ('state', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='tourista_backend.state')),
             ],
         ),
         migrations.AddField(
             model_name='city',
             name='state',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='djangoProject.state'),
+            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='tourista_backend.state'),
         ),
     ]

@@ -7,7 +7,7 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('djangoProject', '0006_revokedtoken'),
+        ('tourista_backend', '0006_revokedtoken'),
     ]
 
     operations = [
@@ -23,7 +23,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('city', models.TextField()),
-                ('state', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='djangoProject.state')),
+                ('state', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='tourista_backend.state')),
             ],
         ),
     ]

@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('djangoProject', '0005_remove_property_hosted_sice_property_hosted_since'),
+        ('tourista_backend', '0005_remove_property_hosted_sice_property_hosted_since'),
     ]
 
     operations = [

@@ -7,7 +7,7 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('djangoProject', '0003_alter_host_created_at_alter_host_updated_at'),
+        ('tourista_backend', '0003_alter_host_created_at_alter_host_updated_at'),
     ]
 
     operations = [
@@ -38,9 +38,9 @@ class Migration(migrations.Migration):
                 ('hosted_sice', models.DateTimeField(auto_now_add=True)),
                 ('created_at', models.DateTimeField(auto_now_add=True)),
                 ('updated_at', models.DateTimeField(auto_now_add=True)),
-                ('host', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='djangoProject.host')),
-                ('location', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='djangoProject.location')),
-                ('property_type', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='djangoProject.propertytype')),
+                ('host', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='tourista_backend.host')),
+                ('location', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='tourista_backend.location')),
+                ('property_type', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='tourista_backend.propertytype')),
             ],
         ),
     ]
