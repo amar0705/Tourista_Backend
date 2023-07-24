@@ -26,7 +26,7 @@ urlpatterns = [
     path('login/', LoginAPIView.as_view()),
     path('host/property', HostPropertyAPIView.as_view()),
     path('host/property/<int:task_id>/', HostPropertyAPIView.as_view()),
-    path('host/logout', LogoutAPIView.as_view()),
+    path('logout/', LogoutAPIView.as_view()),
     path('state/', StateAPIView.as_view()),
     path('city/', CityAPIView.as_view()),
     path('property_type/', PropertyTypeAPIView.as_view()),
