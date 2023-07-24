@@ -7,20 +7,20 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('tourista_backend', '0007_state_city'),
+        ('djangoProject', '0007_state_city'),
     ]
 
     operations = [
         migrations.AddField(
             model_name='property',
             name='city',
-            field=models.ForeignKey(default=1, on_delete=django.db.models.deletion.CASCADE, to='tourista_backend.city'),
+            field=models.ForeignKey(default=1, on_delete=django.db.models.deletion.CASCADE, to='djangoProject.city'),
             preserve_default=False,
         ),
         migrations.AddField(
             model_name='property',
             name='state',
-            field=models.ForeignKey(default=1, on_delete=django.db.models.deletion.CASCADE, to='tourista_backend.state'),
+            field=models.ForeignKey(default=1, on_delete=django.db.models.deletion.CASCADE, to='djangoProject.state'),
             preserve_default=False,
         ),
     ]

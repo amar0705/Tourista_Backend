@@ -1,14 +1,14 @@
 {
   "builds": [
     {
-      "src": "tourista_backend/wsgi.py",
+      "src": "djangoProject/wsgi.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "tourista_backend/wsgi.py"
+      "dest": "djangoProject/wsgi.py"
     }
   ]
 }

@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('tourista_backend', '0004_location_propertytype_property'),
+        ('djangoProject', '0004_location_propertytype_property'),
     ]
 
     operations = [
